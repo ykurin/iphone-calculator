@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "CalcEngine.h"
+
 
 @interface ViewController ()
+
 
 @end
 
@@ -18,6 +21,26 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+- (CalcEngine *)engine {
+    if (!engine) engine = CalcEngine.alloc.init;
+    return engine;
+}
+
+- (IBAction)numberPushed:(UIButton *)sender {
+    if (self.engine.getPosition < ARRAY_SIZE) {
+        self.label.text = sender.titleLabel.text;
+        [self.engine setOperand:sender.titleLabel.text.doubleValue];
+    }
+}
+
+- (IBAction)operationPushed:(UIButton *)sender {
+    if (self.engine.getPosition > 1) {
+        double result = [self.engine performOperation:sender.titleLabel.text];
+        self.label.text = [NSString stringWithFormat:@"%g", result];
+    }
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CalcEngine.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    CalcEngine *engine;
+}
 
+@property (strong, nonatomic) IBOutlet UILabel *label;
+
+- (IBAction)numberPushed:(UIButton *)sender;
+- (IBAction)operationPushed:(UIButton *)sender;
 
 @end
 

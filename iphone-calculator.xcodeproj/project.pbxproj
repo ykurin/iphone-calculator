@@ -14,6 +14,7 @@
 		840FDBB319FD6AB400D1AEAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840FDBB219FD6AB400D1AEAA /* Images.xcassets */; };
 		840FDBB619FD6AB400D1AEAA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840FDBB419FD6AB400D1AEAA /* LaunchScreen.xib */; };
 		840FDBC219FD6AB400D1AEAA /* iphone_calculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 840FDBC119FD6AB400D1AEAA /* iphone_calculatorTests.m */; };
+		84A4446719FE81E40008332C /* CalcEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4446619FE81E40008332C /* CalcEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		840FDBBB19FD6AB400D1AEAA /* iphone-calculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iphone-calculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		840FDBC019FD6AB400D1AEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		840FDBC119FD6AB400D1AEAA /* iphone_calculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iphone_calculatorTests.m; sourceTree = "<group>"; };
+		84A4446619FE81E40008332C /* CalcEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcEngine.m; sourceTree = "<group>"; };
+		84A4446819FE82070008332C /* CalcEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalcEngine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				840FDBB219FD6AB400D1AEAA /* Images.xcassets */,
 				840FDBB419FD6AB400D1AEAA /* LaunchScreen.xib */,
 				840FDBA519FD6AB300D1AEAA /* Supporting Files */,
+				84A4446619FE81E40008332C /* CalcEngine.m */,
+				84A4446819FE82070008332C /* CalcEngine.h */,
 			);
 			path = "iphone-calculator";
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A4446719FE81E40008332C /* CalcEngine.m in Sources */,
 				840FDBAE19FD6AB300D1AEAA /* ViewController.m in Sources */,
 				840FDBAB19FD6AB300D1AEAA /* AppDelegate.m in Sources */,
 				840FDBA819FD6AB300D1AEAA /* main.m in Sources */,
@@ -412,6 +418,7 @@
 				840FDBC719FD6AB400D1AEAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		840FDBC819FD6AB400D1AEAA /* Build configuration list for PBXNativeTarget "iphone-calculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				840FDBCA19FD6AB400D1AEAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
