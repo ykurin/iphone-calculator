@@ -17,6 +17,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *resultLabel;
 
 - (IBAction)numberPushed:(UIButton *)sender;
+- (IBAction)negativePushed:(UIButton *)sender;
 - (IBAction)operationPushed:(UIButton *)sender;
 - (IBAction)enterPushed:(UIButton *)sender;
 - (IBAction)backspacePushed:(UIButton *)sender;

@@ -163,7 +163,7 @@
                                 <color key="tintColor" red="0.1658477086" green="0.0" blue="0.75583814540000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="."/>
                                 <connections>
-                                    <action selector="numberPushed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8v8-Rf-JOj"/>
+                                    <action selector="numberPushed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MJn-Zf-y21"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjk-mo-04v">
@@ -173,7 +173,7 @@
                                 <color key="tintColor" red="0.1658477086" green="0.0" blue="0.75583814540000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="+/-"/>
                                 <connections>
-                                    <action selector="numberPushed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eou-BF-ZTd"/>
+                                    <action selector="negativePushed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XAX-ht-xMV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaC-iG-93U">

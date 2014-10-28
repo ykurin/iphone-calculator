@@ -32,6 +32,14 @@
         self.label.text = [self.label.text stringByAppendingString:sender.titleLabel.text];
 }
 
+- (IBAction)negativePushed:(UIButton *)sender {
+    NSRange found = [self.label.text rangeOfString:@"-"];
+    if (found.location == NSNotFound)
+        self.label.text = [@"-" stringByAppendingString:self.label.text];
+    else
+        self.label.text = [self.label.text substringFromIndex:1];
+}
+
 - (IBAction)operationPushed:(UIButton *)sender {
     if (self.label.text.length != 0) {
         [self.engine setOperand:self.label.text.doubleValue];
