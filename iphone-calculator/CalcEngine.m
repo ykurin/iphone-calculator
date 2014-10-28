@@ -11,6 +11,10 @@
 @implementation CalcEngine
 int position = 0;
 
+- (void)setPosition:(int)pos {
+    position = pos;
+}
+
 - (int)getPosition {
     return position;
 }

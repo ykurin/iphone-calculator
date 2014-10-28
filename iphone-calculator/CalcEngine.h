@@ -13,6 +13,7 @@
     double operatorsArray[ARRAY_SIZE];
 }
 
+- (void)setPosition:(int)pos;
 - (int)getPosition;
 - (void)setOperand:(double)number;
 - (double)performOperation:(NSString *)operation;
